@@ -1,0 +1,44 @@
+.main-headers {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+    word-break: break-all;
+    margin: -2rem;
+    @media all and (min-width: 640px) {
+        flex-wrap: nowrap;
+    }
+    .main-header-image {
+        max-width: 50%;
+        margin-bottom: 0;
+        object-fit: cover;
+    }
+    .main-header-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .variable-text {
+            font-family: 'Inter-black', sans-serif;
+            font-size: 5rem;
+            line-height: 4rem;
+        }
+        .signature {
+            max-width: 75%;
+            text-align: right;
+            transform: rotate(-10deg);
+        }
+        .fixed-text {
+            h4 {
+                margin: 0;
+            }
+            a {
+                text-decoration: none;
+            }
+            h1 {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+}

@@ -12,7 +12,7 @@ const WorkPage = () => (
     {inPagesLinks.map((linked, i) => (
           <React.Fragment key={linked.url}>
             <Link to={linked.url}>{linked.text}</Link>
-            {i !== inPagesLinks.length - 1 && <> · </>}
+            {i !== inPagesLinks.length - 1}
           </React.Fragment>
         ))}
 

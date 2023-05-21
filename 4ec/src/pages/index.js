@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+//import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -8,25 +8,40 @@ import Seo from "../components/seo"
 import links from "../links/links"
 import moreLinks from "../links/more-links"
 
+import mainImage from "../images/MarkoS-croped.jpg"
+import signature from "../images/signature.svg"
+
+//import workNames from "../scripting/scripting"
+
 
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
+
 const IndexPage = () => (
   <Layout>
-    <div className="textCenter">
-      <StaticImage
-        src="../images/example.png"
+    <div className="main-headers">
+    {/* <StaticImage
+        src="../images/MarkoS-croped.jpg"
         loading="eager"
-        width={64}
-        quality={95}
+        quality={100}
         formats={["auto", "webp", "avif"]}
-        alt=""
-      />
-      <h4>I am</h4>
-      <Link to="./page-2.js">
-        <h1 className="main-activity">multiMediaCreator</h1>
-      </Link>
-      <h2 className="name">markoStojković</h2>
+        alt="Mouth full open"
+      /> */}
+
+        <img src={mainImage} alt="multiMediaCreator" className="main-header-image"></img>
+
+      <div className="main-header-text">
+        <div className="variable-text">addfasd</div>
+        <div className="signature">
+          <img src={signature} alt="signature" className="signature"></img>
+        </div>
+        <div className="fixed-text">
+          <h4>I am</h4>
+          <Link to="./page-2.js">
+            <h1 className="main-activity">multiMediaCreator</h1>
+          </Link>
+        </div>
+      </div>
     </div>
     <ul className="list">
       {links.map(link => (

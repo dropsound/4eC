@@ -1,0 +1,13 @@
+@import "../general/variables";
+
+footer {
+    margin-top: var(--space-5);
+    font-size: var(--font-sm);
+    text-align: center;
+    background-color: $brown-mid;
+    color: $light;
+    padding: 1rem 0;
+    .footer-link {
+        color: $brown-light;
+    }
+}

@@ -16,7 +16,12 @@ const samplePageLinks = [
     { text: "Contact", 
     url: "contact", 
     badge: false, 
-    description: "Contact me!!!"}
+    description: "Contact me!!!"
+  },
+    { text: "Topics", 
+    url: "contact", 
+    badge: false, 
+    description: "Various topics from multiMedia creator"}
 
     
     /* { text: "TypeScript", url: "using-typescript" },

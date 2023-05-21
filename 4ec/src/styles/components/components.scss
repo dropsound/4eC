@@ -1,1 +1,6 @@
-@import "./header"
+@import "../general/variables";
+
+@import "./header";
+@import './burger-menu';
+@import './footer';
+@import './main-headers'
